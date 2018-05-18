@@ -1,0 +1,27 @@
+.app-container {
+    font-size: 3rem;
+    width: 600px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: .5em; /* añade una separacion entre cajas */
+}
+
+.box {
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box1 {
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.box5 {
+    grid-column: 1/4;
+    grid-row: 3/4;
+}
