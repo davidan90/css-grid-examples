@@ -1,0 +1,40 @@
+.app-container {
+    font-size: 3rem;
+    width: 600px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: .5em;
+    grid-template-areas: "header header header"
+                         "content1 content2 content3"
+                         "footer footer footer"; /* defino la estructura que quiero con las areas de abajo*/
+}
+
+.box {
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box1 {
+    grid-area: header; /* asigno un nombre de area a la clase */
+}
+
+.box2 {
+    grid-area: content1;
+}
+
+.box3 {
+    grid-area: content2;
+}
+
+.box4 {
+    grid-area: content3;
+}
+
+.box5 {
+    grid-area: footer;
+}
